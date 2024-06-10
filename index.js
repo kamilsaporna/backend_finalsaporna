@@ -17,7 +17,7 @@ mongoose.connect('mongodb+srv://kamilsaporna123:<saporna123>@cluster1.lcn1obe.mo
     .catch((error) => console.log('DB error', error))
 
 const app = express();
-
+//here
 const storage = multer.diskStorage({
     destination:(_,__, cb) => {
         if(!fs.existsSync('uploads')) {
